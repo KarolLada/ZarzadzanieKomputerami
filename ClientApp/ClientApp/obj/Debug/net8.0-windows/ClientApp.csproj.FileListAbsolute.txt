@@ -1,0 +1,38 @@
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.exe
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.deps.json
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.runtimeconfig.json
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.dll
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.pdb
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp_MarkupCompile.cache
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.g.resources
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.AssemblyInfoInputs.cache
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.AssemblyInfo.cs
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.csproj.CoreCompileInputs.cache
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.dll
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\refint\ClientApp.dll
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.pdb
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.genruntimeconfig.cache
+C:\Users\Klasa4gr1 - progr\Desktop\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ref\ClientApp.dll
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.exe
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.deps.json
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.runtimeconfig.json
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.dll
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\bin\Debug\net8.0-windows\ClientApp.pdb
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp_MarkupCompile.cache
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.g.resources
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.AssemblyInfoInputs.cache
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.AssemblyInfo.cs
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.csproj.CoreCompileInputs.cache
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.dll
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\refint\ClientApp.dll
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.pdb
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ClientApp.genruntimeconfig.cache
+C:\Users\kamie\OneDrive\Pulpit\Folder\ClientApp\ClientApp\obj\Debug\net8.0-windows\ref\ClientApp.dll
