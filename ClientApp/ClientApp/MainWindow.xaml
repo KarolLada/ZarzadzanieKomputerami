@@ -24,5 +24,5 @@
                        VerticalAlignment="Center"/>
         </Grid>
 
-    </Grid>
+    </Grid> // Implementacja ekranu blokady
 </Window>
