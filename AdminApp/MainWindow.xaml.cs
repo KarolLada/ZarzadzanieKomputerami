@@ -7,6 +7,7 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 
+//
 namespace AdminApp
 {
     public partial class MainWindow : Window
