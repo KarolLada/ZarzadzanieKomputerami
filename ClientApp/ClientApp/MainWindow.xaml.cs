@@ -40,7 +40,7 @@ namespace ClientApp
                         BlockOverlay.Visibility = Visibility.Visible;
                     else if (msg == "UNBLOCK")
                         BlockOverlay.Visibility = Visibility.Collapsed;
-                });
+                }); // obsługa polecenia odblokowania
             }
         } // Nasłuchiwanie serwera
     }
