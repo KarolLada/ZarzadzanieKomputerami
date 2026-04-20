@@ -21,7 +21,7 @@
 
             <ListBox x:Name="ClientsList" Height="150"/>
 
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Margin="10" Orientation="Horizontal">
                 <Button Content="Zablokuj" Click="Block_Click"/>
                 <Button Content="Odblokuj" Click="Unblock_Click"/>
             </StackPanel>
