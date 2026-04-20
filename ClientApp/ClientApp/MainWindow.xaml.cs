@@ -17,7 +17,12 @@ namespace ClientApp
             // Implementacja połączenia TCP 
         private void Connect()
         {
-            client = new TcpClient("10.10.10.102", 5000);
+            try{
+            client = new TcpClient("10.10.10.102", 5000); 
+            }
+            catch (Exception e){
+                MessageBox.Show(e.message);
+            }
 
             Thread t = new Thread(Listen);
             t.IsBackground = true;
