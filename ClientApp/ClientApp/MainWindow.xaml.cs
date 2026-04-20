@@ -42,6 +42,6 @@ namespace ClientApp
                         BlockOverlay.Visibility = Visibility.Collapsed;
                 });
             }
-        }
+        } // Nasłuchiwanie serwera
     }
 }
