@@ -14,7 +14,7 @@ namespace ClientApp
             InitializeComponent();
             Connect();
         }
-
+            // Implementacja połączenia TCP 
         private void Connect()
         {
             client = new TcpClient("10.10.10.102", 5000);
