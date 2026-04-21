@@ -1,4 +1,4 @@
-# Aplikacja Zarządzanie Komputerami
+# Aplikacja CompAdmin
 
 ## Opis
  
