@@ -20,6 +20,8 @@
 
 
 
+
+
         <StackPanel x:Name="AdminPanel" Visibility="Collapsed">
 
             <Button Content="Wyloguj"
