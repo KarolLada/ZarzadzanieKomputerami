@@ -7,7 +7,7 @@ Aplikacja umożliwia zdalne blokowanie i odblokowywanie komputerów w sieci loka
 - **AdminApp** – używany przez administratora
 - **ClientApp** – uruchamiany na komputerach użytkowników
  
-Administrator może z poziomu panelu wybrać komputer i zablokować lub odblokować jego ekran.
+Administrator może z poziomu panelu wybrać komputer i zablokować lub odblokować jego ekran, a także ustawić ilość czasu za którą komputer będzie zablokowany.
  
 ---
  
@@ -21,6 +21,7 @@ Administrator może z poziomu panelu wybrać komputer i zablokować lub odblokow
 6. Może wybrać dowolny komputer i:
    - zablokować go
    - odblokować go
+   - ustawić ilość czasu za którą komputer będzie zablokowany
  
 ---
  
@@ -59,7 +60,7 @@ Po zablokowaniu:
  
 - na ekranie użytkownika pojawi się ciemna nakładka
 - wyświetli się komunikat:
-- użytkownik nie może korzystać z aplikacji
+- użytkownik nie może korzystać z klawiatury i myszki
  
 Po odblokowaniu ekran wraca do normalnego stanu.
  
@@ -69,7 +70,7 @@ Po odblokowaniu ekran wraca do normalnego stanu.
  
 - komputery muszą być w tej samej sieci
 - aplikacje muszą mieć możliwość komunikacji przez port 5000
-- system Windows
+- system Windows 10/11
  
 ---
  
