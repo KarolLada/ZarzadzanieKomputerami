@@ -1,16 +1,24 @@
-﻿<Window x:Class="ClientApp.MainWindow"
+<Window x:Class="ClientApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Client PC" Height="400" Width="600">
 
     <Grid>
 
-        <!-- FAKE DESKTOP -->
-        <TextBlock Text="To jest komputer klienta"
+        <!-- normalny ekran -->
+        <TextBlock Text="Komputer klienta"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontSize="20"/>
-<!-- /\ -->
+
+        <!-- TIMER (lewy górny róg) -->
+        <TextBlock x:Name="TimerText"
+                   Text=""
+                   Foreground="White"
+                   FontSize="16"
+                   Margin="10"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"/>
 
         <!-- BLOKADA -->
         <Grid x:Name="BlockOverlay"
@@ -24,5 +32,5 @@
                        VerticalAlignment="Center"/>
         </Grid>
 
-    </Grid ><!-- Implementacja ekranu blokady --> 
+    </Grid>
 </Window>
