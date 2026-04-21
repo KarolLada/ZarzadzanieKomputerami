@@ -1,55 +1,187 @@
 <Window x:Class="AdminApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Admin Panel" Height="450" Width="600">
+        Title="Admin Panel" Height="500" Width="750"
+        Background="#1e1e1e"
+        WindowStartupLocation="CenterScreen">
 
-    <Grid Margin="10">
-
-
-        <StackPanel x:Name="LoginPanel">
-
-            <TextBlock Text="Zaloguj jako admin" FontSize="16" Margin="0,0,0,10"/>
-
-            <PasswordBox x:Name="PasswordBox" Width="200" Margin="0,0,0,10"/>
-
-            <Button Content="Zaloguj"
-                    Click="Login_Click"
-                    Width="100"/>
-
-        </StackPanel>
+    <Window.Resources>
 
 
+        <SolidColorBrush x:Key="Primary" Color="#4CAF50"/>
+        <SolidColorBrush x:Key="Danger" Color="#F44336"/>
+        <SolidColorBrush x:Key="BackgroundCard" Color="#2a2a2a"/>
 
 
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#3a3a3a"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-        <StackPanel x:Name="AdminPanel" Visibility="Collapsed">
 
-            <Button Content="Wyloguj"
-                    Click="Logout_Click"
-                    Width="100"
-                    HorizontalAlignment="Right"/>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#333"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
 
-            <Separator Margin="10"/>
 
-            <TextBlock Text="Timer (sekundy):"/>
+        <Style TargetType="PasswordBox">
+            <Setter Property="Background" Value="#333"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
 
-            <StackPanel Orientation="Horizontal" Margin="0,5,0,10">
-                <TextBox x:Name="TimerBox" Width="80" Margin="0,0,10,0"/>
-                <Button Content="Start timer" Click="StartTimer_Click"/>
+    </Window.Resources>
+
+    <Grid Margin="20">
+
+
+        <Border x:Name="Toast"
+                Background="#4CAF50"
+                CornerRadius="10"
+                Padding="10"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="0,10,10,0"
+                Visibility="Collapsed"
+                Opacity="0">
+
+            <TextBlock x:Name="ToastText"
+                       Foreground="White"
+                       FontWeight="Bold"/>
+        </Border>
+
+
+        <Border x:Name="LoginPanel"
+                Background="{StaticResource BackgroundCard}"
+                CornerRadius="12"
+                Padding="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="300">
+
+            <StackPanel>
+                <TextBlock Text="🔐 Panel Admina"
+                           Foreground="White"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="0,0,0,15"
+                           TextAlignment="Center"/>
+
+                <PasswordBox x:Name="PasswordBox"
+                             Margin="0,0,0,10"
+                             Height="30"/>
+
+                <Button Content="Zaloguj"
+                        Background="{StaticResource Primary}"
+                        Click="Login_Click"/>
             </StackPanel>
+        </Border>
 
-            <Separator Margin="10"/>
 
-            <TextBlock Text="Komputery:" FontSize="16"/>
+        <Grid x:Name="AdminPanel" Visibility="Collapsed">
 
-            <ListBox x:Name="ClientsList" Height="150" Margin="0,5,0,10"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal">
-                <Button Content="Zablokuj" Click="Block_Click" Margin="0,0,10,0"/>
-                <Button Content="Odblokuj" Click="Unblock_Click"/>
-            </StackPanel>
 
-        </StackPanel>
+            <DockPanel Margin="0,0,0,10">
+                <TextBlock Text="🛠 Admin Panel"
+                           Foreground="White"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           DockPanel.Dock="Left"/>
+
+                <Button Content="Wyloguj"
+                        Background="{StaticResource Danger}"
+                        Click="Logout_Click"
+                        DockPanel.Dock="Right"/>
+            </DockPanel>
+
+
+            <Grid Grid.Row="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Border Background="{StaticResource BackgroundCard}"
+                        CornerRadius="10"
+                        Padding="10"
+                        Margin="0,0,10,0">
+
+                    <StackPanel>
+                        <TextBlock Text="💻 Klienci"
+                                   Foreground="White"
+                                   FontSize="16"
+                                   Margin="0,0,0,10"/>
+
+                        <ListBox x:Name="ClientsList"
+                                 Background="#333"
+                                 Foreground="White"
+                                 BorderThickness="0"
+                                 Height="250"/>
+
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Center">
+
+                            <Button Content="Zablokuj"
+                                    Background="{StaticResource Danger}"
+                                    Click="Block_Click"/>
+
+                            <Button Content="Odblokuj"
+                                    Background="{StaticResource Primary}"
+                                    Click="Unblock_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+
+                <Border Grid.Column="1"
+                        Background="{StaticResource BackgroundCard}"
+                        CornerRadius="10"
+                        Padding="10">
+
+                    <StackPanel>
+                        <TextBlock Text="⏱ Timer"
+                                   Foreground="White"
+                                   FontSize="16"
+                                   Margin="0,0,0,10"/>
+
+                        <TextBox x:Name="TimerBox"
+                                 Height="30"
+                                 Margin="0,0,0,10"/>
+
+                        <Button Content="Start"
+                                Background="{StaticResource Primary}"
+                                Click="StartTimer_Click"/>
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+        </Grid>
 
     </Grid>
 </Window>
