@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 using System.Collections.ObjectModel;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Windows;
-using System.Windows.Controls;
-//
+
 namespace AdminApp
 {
     public partial class MainWindow : Window
     {
         TcpListener server;
         ObservableCollection<TcpClient> clients = new ObservableCollection<TcpClient>();
-        bool logged = false;
+
+        bool serverStarted = false;
 
         public MainWindow()
         {
@@ -25,14 +25,29 @@ namespace AdminApp
         {
             if (PasswordBox.Password == "admin")
             {
-                logged = true;
-                StartServer();
+                if (!serverStarted)
+                {
+                    StartServer();
+                    serverStarted = true;
+                }
+
+                LoginPanel.Visibility = Visibility.Collapsed;
+                AdminPanel.Visibility = Visibility.Visible;
+
                 MessageBox.Show("Zalogowano!");
             }
             else
             {
                 MessageBox.Show("Złe hasło");
             }
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            AdminPanel.Visibility = Visibility.Collapsed;
+            LoginPanel.Visibility = Visibility.Visible;
+
+            PasswordBox.Password = "";
         }
 
         private void StartServer()
@@ -57,30 +72,43 @@ namespace AdminApp
             t.Start();
         }
 
-        private void SendToClient(TcpClient client, string msg)
+        private void Send(TcpClient client, string msg)
         {
-            var stream = client.GetStream();
-            byte[] data = Encoding.UTF8.GetBytes(msg);
-            stream.Write(data, 0, data.Length);
+            try
+            {
+                var stream = client.GetStream();
+                byte[] data = Encoding.UTF8.GetBytes(msg);
+                stream.Write(data, 0, data.Length);
+            }
+            catch
+            {
+                MessageBox.Show("Błąd wysyłania do klienta");
+            }
         }
 
         private void Block_Click(object sender, RoutedEventArgs e)
         {
-            if (ClientsList.SelectedItem is TcpClient client)
-            {
-                SendToClient(client, "BLOCK");
-            }
+            if (ClientsList.SelectedItem is TcpClient c)
+                Send(c, "BLOCK");
         }
 
         private void Unblock_Click(object sender, RoutedEventArgs e)
         {
-            if (ClientsList.SelectedItem is TcpClient client)
+            if (ClientsList.SelectedItem is TcpClient c)
+                Send(c, "UNBLOCK");
+        }
+
+        private void StartTimer_Click(object sender, RoutedEventArgs e)
+        {
+            if (ClientsList.SelectedItem is TcpClient c &&
+                int.TryParse(TimerBox.Text, out int sec))
             {
-                SendToClient(client, "UNBLOCK");
+                Send(c, $"TIMER:{sec}");
+            }
+            else
+            {
+                MessageBox.Show("Podaj poprawną liczbę sekund i wybierz klienta");
             }
         }
     }
 }
-//
-//
-//
