@@ -28,17 +28,20 @@ Administrator może z poziomu panelu wybrać komputer i zablokować lub odblokow
 ## Instrukcja uruchomienia
  
 ### Krok 1 – uruchomienie panelu administratora
- 
+ <img width="731" height="486" alt="image" src="https://github.com/user-attachments/assets/ec56f262-4953-465b-8a20-3fb14ae511f2" />
+
 1. Uruchom aplikację **AdminApp**
 2. Wprowadź hasło: `admin`
 3. Kliknij przycisk **Zaloguj**
- 
+ <img width="727" height="486" alt="image" src="https://github.com/user-attachments/assets/1e3a1b96-fe17-4c12-a3d4-c1f18dd0670d" />
+
 Po zalogowaniu serwer zostanie uruchomiony automatycznie.
  
 ---
  
 ### Krok 2 – uruchomienie klientów
- 
+ <img width="732" height="486" alt="image" src="https://github.com/user-attachments/assets/068ea4ea-7c29-4bf3-9a13-29bbf3670058" />
+
 1. Uruchom aplikację **ClientApp** na komputerach użytkowników
 2. Aplikacja automatycznie połączy się z serwerem
  
